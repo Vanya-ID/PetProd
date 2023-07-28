@@ -4,25 +4,23 @@
 @import "./themes/dark";
 
 .app {
-  font: var(--font-m);
+    font: var(--font-m);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
 
-  background: var(--bg-color);
-  color: var(--primary-color);
+    // Dimensions
 
-  min-height: 100vh;
-
-  // Dimensions
-
-  --navbar-height: 50px;
-  --sidebar-width: 300px;
-  --sidebar-width-collapsed: 80px;`
+    --navbar-height: 50px;
+    --sidebar-width: 300px;
+    --sidebar-width-collapsed: 80px;
 }
 
 .content-page {
-  display: flex;
+    display: flex;
 }
 
 .page-wrapper {
-  flex-grow: 1;
-  padding: 20px;
+    flex-grow: 1;
+    padding: 20px;
 }
