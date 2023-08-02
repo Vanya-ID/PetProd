@@ -1,5 +1,7 @@
 {
 	"Main page": "Главная страница",
 	"Language": "Русский",
-	"Page Not Found": "Страница не найдена"
+	"Page Not Found": "Страница не найдена",
+	"Something went wrong": "Что-то пошло не так",
+	"Reload page": "Перезагрузить страницу"
 }
