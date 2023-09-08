@@ -1,8 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Modal } from 'shared/ui/Modal/Modal';
 import { useCallback, useState } from 'react';
-import { Button, ThemeButton } from 'shared/ui/Button';
+import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { LoginModal } from 'features/AuthByUsername';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -13,7 +13,7 @@ export const Navbar = ({ className }: NavbarProps) => {
     const { t } = useTranslation();
     const [isAuthModal, setIsAuthModal] = useState<boolean>(false);
 
-    const onToggleModal = useCallback(() => {
+    const onCloseModal = useCallback(() => {
         setIsAuthModal((prevState) => !prevState);
     }, []);
 
@@ -22,16 +22,11 @@ export const Navbar = ({ className }: NavbarProps) => {
             <Button
                 className={cls.links}
                 theme={ThemeButton.CLEAR_INVERTED}
-                onClick={onToggleModal}
+                onClick={onCloseModal}
             >
                 {t('Enter')}
             </Button>
-            <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-                fqfqqfqfqfq
-                fqfqqfqfqfq
-                fqfqqfqfqfq
-                fqfqqfqfqfq
-            </Modal>
+            <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
         </div>
     );
 };
