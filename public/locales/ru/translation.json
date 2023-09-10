@@ -6,7 +6,10 @@
 	"Something went wrong": "Что-то пошло не так",
 	"Reload page": "Перезагрузить страницу",
 	"Short Language": "ru",
-	"Enter": "Войти",
+	"Login": "Войти",
 	"Enter username": "Введите username",
-	"Enter password": "Введите пароль"
+	"Enter password": "Введите пароль",
+	"Incorrect username or password": "Неправильный юзернейм или почта",
+	"Auth Form": "Форма Авторизации",
+	"Logout": "Выйти"
 }

@@ -1,11 +1,16 @@
 {
   "About page": "About page",
+  "Auth Form": "Auth Form",
   "Enter": "Enter",
   "Enter password": "Enter password",
   "Enter username": "Enter username",
+  "Incorrect username or password": "Incorrect username or password",
   "Language": "Language",
+  "Login": "",
+  "Logout": "",
   "Main page": "Main page",
   "Page Not Found": "Page Not Found",
   "Reload page": "Reload page",
+  "Short Language": "Short Language",
   "Something went wrong": "Something went wrong"
 }
