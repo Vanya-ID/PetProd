@@ -7,7 +7,7 @@ import { Suspense, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
 
-export const App = () => {
+const App = () => {
     const { theme } = useTheme();
 
     const dispatch = useDispatch();
@@ -28,3 +28,5 @@ export const App = () => {
         </div>
     );
 };
+
+export default App;
