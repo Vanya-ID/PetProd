@@ -1,7 +1,6 @@
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames, DynamicModuleLoader, ReducerList } from 'shared/lib';
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
-import { DynamicModuleLoader, ReducerList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { profileReducer } from 'entities/Profile';
 
 const reducers: ReducerList = {

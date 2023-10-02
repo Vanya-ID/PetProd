@@ -5,8 +5,8 @@ import {
 } from '@reduxjs/toolkit';
 import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
-import { To } from '@remix-run/router';
-import { NavigateOptions } from 'react-router/dist/lib/context';
+import { To } from 'history';
+import { NavigateOptions } from 'react-router-dom';
 
 export interface StateSchema {
     user: UserSchema;

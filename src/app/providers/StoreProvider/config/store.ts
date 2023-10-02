@@ -2,8 +2,8 @@ import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 import { userReducer } from 'entities/User';
 import { createReducerManager } from 'app/providers/StoreProvider/config/reducerManager';
 import { $api } from 'shared/api/api';
-import { To } from '@remix-run/router';
-import { NavigateOptions } from 'react-router/dist/lib/context';
+import { To } from 'history';
+import { NavigateOptions } from 'react-router-dom';
 import { StateSchema } from './StateSchema';
 
 export function createReduxStore(
